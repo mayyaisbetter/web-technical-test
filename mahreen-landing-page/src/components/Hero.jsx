@@ -5,7 +5,6 @@ import AuroraBg from './animations/AuroraBg';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden px-8 md:px-24">
-      {/* Background Animasi Ala React Bits */}
       <AuroraBg />
 
       <div className="absolute left-6 top-1/2 -translate-y-1/2 -rotate-90 text-[10px] tracking-[0.3em] text-neutral-400 dark:text-neutral-500 uppercase hidden lg:block origin-left">
@@ -14,7 +13,6 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
         
-        {/* Kolom Kiri: Teks */}
         <div className="flex flex-col justify-center mt-12 lg:mt-0">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -51,15 +49,13 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Kolom Kanan: Tempat Image 3D Melayang */}
         <motion.div 
           animate={{ y: [-15, 15, -15] }} 
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           className="hidden lg:flex items-center justify-center pointer-events-none"
         >
           <img 
-            // Nanti file dari ChatGPT masukkan ke folder assets dan biarkan path ini
-            src="/src/assets/hero-3d.png" 
+            src="/hero-3d.png" 
             alt="" 
             className="w-[80%] xl:w-[90%] drop-shadow-2xl opacity-90 mix-blend-normal"
           />

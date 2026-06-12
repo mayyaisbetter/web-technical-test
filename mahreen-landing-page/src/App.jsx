@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50 font-sans transition-colors duration-300">
-      <GhostCursor /> {/* Panggil di sini */}
+      <GhostCursor /> 
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <main>
         <Hero />

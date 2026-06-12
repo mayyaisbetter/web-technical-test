@@ -3,12 +3,10 @@ import { motion } from 'framer-motion';
 export default function Footer() {
   return (
     <footer className="relative pt-32 pb-12 px-8 md:px-24 overflow-hidden">
-      {/* Background Grid Lines Placeholder */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none grid grid-cols-6 -z-10">
         {[...Array(6)].map((_, i) => <div key={i} className="border-r border-black dark:border-white h-full"></div>)}
       </div>
 
-      {/* CTA Section */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}

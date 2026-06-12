@@ -1,7 +1,6 @@
 import AnimatedContent from './animations/AnimatedContent';
 
 export default function Initiatives() {
-  // Saya tambahkan properti 'img' dengan placeholder Unsplash berkualitas tinggi
   const cards = [
     { 
       num: "01", category: "Kreativitas", title: "Digital Creative Hub", 
