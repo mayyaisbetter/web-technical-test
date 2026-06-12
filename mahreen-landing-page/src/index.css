@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* 1. Mengaktifkan Dark/Light Mode berbasis class */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Memasukkan konfigurasi Font (Pengganti tailwind.config.js) */
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* 3. Reset bawaan Vite */
 body {
   margin: 0;
 }
@@ -7,4 +17,3 @@ body {
 #root {
   min-height: 100vh;
 }
-
